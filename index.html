@@ -17,8 +17,6 @@
   <script src='public/js/main.js'></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.14/iframeResizer.min.js'></script>
-  <script type="text/javascript" data-venue='SsZcjHyDfu' src="https://gt-mainstage-dev.herokuapp.com/js/loadVenueSchedule.js" defer></script>
-  <script>iFrameResize({log:true}, '#gt-schedule iframe')</script>
 </head>
 <body>
   <div id='main'>
@@ -168,5 +166,8 @@
       <img src='public/images/twitch_red.svg' class='hover' />
     </a>
   </div>
+  <script type="text/javascript" data-venue='SsZcjHyDfu' src="https://gt-mainstage-dev.herokuapp.com/js/loadVenueSchedule.js">
+    iFrameResize({log:true}, '#gt-schedule iframe');
+  </script>
 </body>
 </html>
