@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Henry Spindell</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/crimson" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/orkney" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/vremena" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel='stylesheet' href='public/css/main.css' />
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' ></script>
+  <script src='public/js/main.js'></script>
+  <script type="text/javascript" data-venue='4uYexp3U6W' src="http://localhost:3000/js/loadVenueSchedule.js" defer></script>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+</head>
+<body>
+  <div id='main'>
+    <div id='header'>
+      <div id='logo-header'>
+        <div class='separator'></div>
+        <div class='separator light'></div>
+        <img src='public/images/henry-logo.png' />
+        <div class='separator'></div>
+      </div>
+      <div id='nav'>
+        <div class='menu first'>
+          <div class='nav-item presented' data-tab='me'>About Me</div>
+          <div class='nav-item' data-tab='work'>Employment</div>
+
+        </div>
+        <div class='menu second'>
+          <div class='nav-item' data-tab='school'>Education</div>
+          <div class='nav-item' data-tab='other'>Other</div>
+        </div>
+      </div>
+      <div class='separator'></div>
+    </div>
+
+
+    <div id='tabs-container'>
+      <div id='gt-schedule'>
+        <img src='http://localhost:3000/images/loading.gif' />
+      </div>
+      <div id='me' class='tab presented'>
+        <div class='tab-summary'>
+          Hi, I'm Henry. I'm a developer from Minnesota, currently wearing many hats at <a href='https://www.gigtown.com' target='_blank'>GigTown Music</a> in San Diego, CA. I work on our native iOS and Android apps, web platform, API servers and more.
+          Before GigTown I spent five years at Northwestern University where I learned AI principles and how to force purple into my wardrobe.
+
+          Outside of work you can find me on Rocket League (PSN: Rigatoni_BGT), downing Capri Sun, or admiring Ricky Rubio.
+          <br /><br />
+          Please feel free to check out my stuff and/or contact me below!
+        </div>
+
+        <div class='tab-content'>
+          <img id='contact-avatar' src='public/images/avatar.jpg' />
+          <form id='contact-form' action="https://formspree.io/henryspindell@gmail.com" method="POST">
+            <h2 class='text-left'>Contact Me</h2>
+            <div class='row'>
+              <div class='col-xs-12 col-sm-6'>
+                <input type="text" name="name" placeholder='Your name'>
+              </div>
+              <div class='col-xs-12 col-sm-6'>
+                <input type="email" name="_replyto" placeholder='Your email'>
+              </div>
+            </div>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <div class='text-left'>
+              <input type="submit" value="Send" class='btn' id='send-btn'>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+
+      <div id='work' class='tab'>
+        <div class='tab-summary'>
+          I currently work at <a href='https://www.gigtown.com' target='_blank'>GigTown Music</a> in San Diego, CA. GigTown is a platform for local musicians to get discovered and booked by fans and venues, respectively. I've detailed some of my responsibilites below.
+        </div>
+        <div class='tab-content'>
+          <!-- Maybe: Other jobs (trivios, soccercity, ucare) -->
+          <h2>iOS & Android</h2>
+          <div id='app-links'>
+            <a href='https://play.google.com/store/apps/details?id=com.gigtown.fender&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='public/images/android_download.png'/></a>
+            <a href='https://itunes.apple.com/us/app/gigtown-book-live-music-for-your-event/id932936250?mt=8'><img alt='Get it on the Apple Store' src='public/images/ios_download.svg'/></a>
+          </div>
+
+          <img class='project-sample' height=400 src='public/images/gt-ios.png' />
+          <img class='project-sample' height=400 src='public/images/gt-android.png' />
+          <p>
+            I develop new features, maintain code, and release updates for our native iOS and Android apps using Swift and Java. Aside from the booking and discovery features shared by the website, the mobile apps afford users to see what shows are happening nearby, be automatically "checked in" when they arrive at a venue, or tip an artist using Apple/Android Pay.
+          </p>
+          <h2>Web Platform</h2>
+          <img class='project-sample' height=250 src='public/images/gt-web.png' />
+          <img class='project-sample' height=250 src='public/images/gt-web-2.png' />
+          <p>
+            I implemented the GigTown website functionality and design to complete feature parity with the mobile apps, including the <a href='https://www.gigtown.com' target='_blank'>landing page</a>, artist signup and management, <a href='https://www.gigtown.com/gigs' target='_blank'>browsing and submitting to gigs</a>, <a href='https://www.gigtown.com/shows' target='_blank'>discovering shows</a>, <a href='https://www.gigtown.com/cities/san-diego' target='_blank'>public artist profiles</a>, and more.
+          </p>
+          <h2>Backend</h2>
+          <p>
+            On the GigTown backend I'm responsible for the architecture and upgrading of new and existing data models and indices, as well as the implementation of validations, jobs, webhooks, and more.
+          </p>
+        </div>
+      </div>
+
+      <div id='school' class='tab'>
+        <div class='tab-summary'>
+          I graduated Magna Cum Laude from Northwestern University in 2015, and received a Master's degree in Computer Science the following year through the five year B.S./M.S. program. My undergrad focus was on A.I. and Interfaces, and I took any opportunity to mess around with game development as well. My Master's work culminated in a <a href='http://dl.acm.org/citation.cfm?id=2984533' target='_blank'>crowdsourcing research paper</a> which I presented with a partner at <a href='https://uist.acm.org/uist2016/' target='_blank'>UIST 2016</a> in Tokyo.
+        </div>
+        <div class='tab-content'>
+          <!-- Definitely: Habitsourcing, RIT, Games -->
+          <!-- Maybe: Social Temp, Watson, ForgetLastNight, RinkTalk, GraffitiEraser, Thimble -->
+          <h2>Habitsourcing</h2>
+          <div class='project-sample' style='line-height: 0;display:inline-block;'>
+            <iframe id='uist-vid' src="https://www.youtube.com/embed/7yiHSRuSN7Y" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p>
+            Habitsourcing is an alternative approach to collecting environmental data that harnesses the habit-building practices of millions of people. As a member of the Delta Lab research group at Northwestern with Dr. Haoqi Zhang, Katherine Lin and I had the privilege of researching, developing a prototype app and presenting our work in Tokyo at <a href='https://uist.acm.org/uist2016/' target='_blank'>UIST 2016</a>. You can watch the full talk above or <a href='http://dl.acm.org/citation.cfm?id=2984533' target='_blank'>see the paper here</a>.
+          </p>
+          <h2>Games</h2>
+          <img class='project-sample' height=250 src='public/images/gt-web.png' />
+          <p>
+            On the GigTown backend I'm responsible for the architecture and upgrading of new and existing data models and indices, as well as the implementation of validations, jobs, webhooks, and more.
+          </p>
+          <h2>Graffiti Eraser</h2>
+          <img class='project-sample' height=250 src='public/images/gt-web.png' />
+          <p>
+            On the GigTown backend I'm responsible for the architecture and upgrading of new and existing data models and indices, as well as the implementation of validations, jobs, webhooks, and more.
+          </p>
+          <h2>Rehabilitation Institute of Chicago</h2>
+          <img class='project-sample' height=250 src='public/images/gt-web.png' />
+          <p>
+            On the GigTown backend I'm responsible for the architecture and upgrading of new and existing data models and indices, as well as the implementation of validations, jobs, webhooks, and more.
+          </p>
+
+        </div>
+      </div>
+
+      <div id='other' class='tab'>
+        <div class='tab-summary'>
+          Ricky Rubio. Rocket League. Gardettos. Minnesota. Heroes of the Storm. Capri Sun. Andy Samberg.<br />
+          If any of the above resonate with you (or you have another reason to contact me), please reach out using the form below!
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="footer">
+    <a href='https://www.linkedin.com/in/henryspindell/' target='_blank'>
+      <img src='public/images/linkedin_gray.svg' />
+      <img src='public/images/linkedin_red.svg' class='hover' />
+    </a>
+    <a href='https://github.com/hspindell' target='_blank'>
+      <img src='public/images/github_gray.svg' />
+      <img src='public/images/github_red.svg' class='hover' />
+    </a>
+    <a href='https://twitch.tv/rigatoni_bgt' target='_blank'>
+      <img src='public/images/twitch_gray.svg' />
+      <img src='public/images/twitch_red.svg' class='hover' />
+    </a>
+  </div>
+</body>
+</html>
