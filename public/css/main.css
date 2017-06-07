@@ -40,6 +40,9 @@ body {
   display: inline-block;
 }
 
+.no-underline:hover {
+  text-decoration: none;
+}
 /** {
     -webkit-transition-property: all;
     -webkit-transition-duration: .5s;
