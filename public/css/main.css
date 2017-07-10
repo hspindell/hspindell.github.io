@@ -10,6 +10,35 @@ body {
   padding-bottom: 15rem;
 }
 
+.technologies {
+  font-size: 15px;
+  color: #686767;
+  border-left: 1px solid #686767;
+  padding-left: 5px;
+}
+
+.modal-dialog {
+  width: 900px;
+}
+
+.modal-title {
+  font-size: 30px;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+
+.modal-body {
+  background: black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.modal-footer .disclaimer {
+  float: left;
+  padding-left: 10px;
+  color: gray;
+}
+
 .footer {
   position: absolute;
   right: 0;
@@ -40,8 +69,12 @@ body {
   display: inline-block;
 }
 
+.no-outline {
+  outline: none !important;
+}
+
 .no-underline:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /** {
     -webkit-transition-property: all;
@@ -152,6 +185,7 @@ a {
   -webkit-box-shadow: 10px 10px 40px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 40px -8px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 40px -8px rgba(0,0,0,0.75);
+  max-width: 100%;
 }
 
 #app-links a {
@@ -176,6 +210,26 @@ a {
 
 .tab-content h2:first-child {
   margin-top: 30px;
+}
+
+#credit {
+  bottom: 5px;
+  position: absolute;
+  right: 25px;
+  color: #828282;
+  font-size: 12px;
+}
+
+#unityPlayer {
+  cursor: default;
+  height: 611px;
+  width: 1100px;
+  margin: 0 auto;
+  background: black;
+}
+#unity-player-holder {
+  margin: 0 auto;
+  width: 1100px;
 }
 
 
@@ -205,7 +259,7 @@ a {
 }
 
 
-#school.tab #uist-vid {
+#education.tab #uist-vid {
   width: 660px;
   height: 370px;
 }
@@ -246,6 +300,7 @@ a {
 }
 
 
+
 /* DESKTOP */
 @media (min-width: 768px) {
   .tab-content {
@@ -267,6 +322,23 @@ a {
 
 /* SMALL */
 @media (max-width: 768px) {
+  #credit {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 10px;
+  }
+
+
+  #unityPlayer {
+    height: 317px;
+    width: 495px;
+  }
+
+  #unity-player-holder {
+    width: 495px;
+  }
+
   #logo-header img {
     width: 70%;
   }
@@ -283,7 +355,7 @@ a {
     width: 85%;
   }
 
-  #school.tab #uist-vid {
+  #education.tab #uist-vid {
     width: 480px;
     height: 270px;
   }
@@ -293,6 +365,15 @@ a {
 
 /* XTRA SMALL */
 @media (max-width: 576px) {
+
+  #unityPlayer {
+    height: 211px;
+    width: 355px;
+  }
+  #unity-player-holder {
+    width: 355px;
+  }
+
   #logo-header img {
     width: 95%;
   }
@@ -312,6 +393,7 @@ a {
 
   .tab-summary {
     width: 95%;
+    text-align: center;
   }
 
   .tab-content {
@@ -347,7 +429,7 @@ a {
     height: inherit;
   }
 
-  #school.tab #uist-vid {
+  #education.tab #uist-vid {
     width: 360px;
     height: 205px;
   }
