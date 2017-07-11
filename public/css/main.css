@@ -360,6 +360,14 @@ a {
     height: 270px;
   }
 
+  body {
+    padding-bottom: 22rem;
+  }
+
+  .footer {
+    height: 161px;
+  }
+
 
 }
 
