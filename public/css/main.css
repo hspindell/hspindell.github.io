@@ -367,8 +367,6 @@ a {
   .footer {
     height: 161px;
   }
-
-
 }
 
 /* XTRA SMALL */
@@ -443,17 +441,6 @@ a {
   }
 }
 
-
-/*input, textarea {
-  font-size: 16px;
-  padding: 5px 10px;
-  outline: none;
-  resize: none;
-  margin-bottom: 10px;
-  width: 100%;
-}*/
-
-
 @media (min-width: 768px) {
   html {
     border-top: 10px solid black;
@@ -463,15 +450,3 @@ a {
     padding-bottom: 15rem;
   }
 }
-
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }*/
