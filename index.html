@@ -6,6 +6,18 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58523890-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/crimson" type="text/css"/>
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/orkney" type="text/css"/>
@@ -173,13 +185,27 @@
           "Other" kind of speaks for itself.
         </div>
         <div class='tab-content'>
-          <h2>Fire Flames Fantasy Football</h2>
-          <img class='project-sample' height=250 src='public/images/fff1.png' />
-          <img class='project-sample' height=250 src='public/images/fff2.png' />
-          <p>
-            <i>FireFlamesFantasy</i> is a website I created to accompany a long-running fantasy football league of which I am a member. It hosts team profiles including history and statistics that update automatically each week via scraping, and weekly editorial content such as power rankings and matchup predictions, which in turn are automatically assessed for accuracy the following week. While I prefer to demo my work, I'm not linking the site here because I don't censor or curate the content created by other league members...
-            <br /><span class='technologies'>MongoDB, Express, Angular, Node</span>
-          </p>
+          <div>
+            <h2>
+              <img class='qt-logo' src='public/images/qt-logo.png'  />
+              QuickTwitch
+            </h2>
+            <img class='project-sample' height=250 src='public/images/qt1.png' />
+            <img class='project-sample' height=250 src='public/images/qt2.png' />
+            <p>
+              <i>QuickTwitch</i> is a minimal menubar app for Mac that gives easy and instant access to Twitch streams. I started this project as a way to get my feet wet with creating Mac apps, specifically menubar ones which I've always found especially useful. As a frequent gamer, I often look to Twitch to preview a game I'm interested in or recently started playing. The "top live streamer" option in this app lets you pop open a popular stream for any game in seconds. After all, this is 2018 and nobody wants to waste time opening a browser when you can go native! <a href='https://github.com/hspindell/quicktwitch/releases'>Download the latest release.</a>
+              <br /><span class='technologies'>Electron, Node</span>
+            </p>
+          </div>
+          <div>
+            <h2>Fire Flames Fantasy Football</h2>
+            <img class='project-sample' height=250 src='public/images/fff1.png' />
+            <img class='project-sample' height=250 src='public/images/fff2.png' />
+            <p>
+              <i>FireFlamesFantasy</i> is a website I created to accompany a long-running fantasy football league of which I am a member. It hosts team profiles including history and statistics that update automatically each week via scraping, and weekly editorial content such as power rankings and matchup predictions, which in turn are automatically assessed for accuracy the following week. While I prefer to demo my work, I'm not linking the site here because I don't censor or curate the content created by other league members...
+              <br /><span class='technologies'>MongoDB, Express, Angular, Node</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

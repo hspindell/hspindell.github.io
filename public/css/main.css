@@ -299,6 +299,11 @@ a {
   background-color: #a32d25;
 }
 
+.qt-logo {
+  height: 28px;
+  position: relative;
+  bottom: 2px;
+}
 
 
 /* DESKTOP */
