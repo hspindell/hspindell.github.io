@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /public/images/unnamed1.png
+Disallow: /public/images/unnamed2.png
